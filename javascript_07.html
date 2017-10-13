@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript">
-console.log = function(msg) {
-        var ul = document.getElementById("log");
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(msg));
-        ul.appendChild(li);
-    }
+﻿<!DOCTYPE html>
 
-    window.onload = function() {
-        document.getElementById("run").onclick = function() {
-            var a = 10;
+<html>
+
+	<head>
+	<script type = "text/javascript">
+    var a = 10;
 var b = 10;
 var c = "10";
 
@@ -24,15 +17,12 @@ console.log(a === c); //false
 console.log(a == b && typeof(a) == typeof (b));
 console.log(a == c && typeof(a) == typeof (c));
 
-        }
-    }
-
-</script>
-</head>
+  </script>
+  </head>
 <body>
     <div>
         <textarea cols = "100" rows="40">
-       var a = 10;
+           var a = 10;
 var b = 10;
 var c = "10";
 

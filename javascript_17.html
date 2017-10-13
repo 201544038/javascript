@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-<script type="text/javascript">
-    console.log = function(msg) {
-        var ul = document.getElementById("log");
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(msg));
-        ul.appendChild(li);
-    }
+﻿<!DOCTYPE html>
 
-    window.onload = function() {
-        document.getElementById("run").onclick = function() {
-           for (i = 0; i<10; i++){
+<html>
+
+	<head>
+	<script type = "text/javascript">
+     	      for (i = 0; i<10; i++){
     if (i === 3) { break;}
     console.log("the number is " + i);
   }
-        }
-    }
-  
   </script>
   </head>
 <body>
     <div>
         <textarea cols = "100" rows="40">
-         for (i = 0; i<10; i++){
+                    for (i = 0; i<10; i++){
     if (i === 3) { break;}
     console.log("the number is " + i);
   }

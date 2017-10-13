@@ -1,32 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-<script type="text/javascript">
-    console.log = function(msg) {
-        var ul = document.getElementById("log");
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(msg));
-        ul.appendChild(li);
-    }
+﻿<!DOCTYPE html>
 
-    window.onload = function() {
-        document.getElementById("run").onclick = function() {
-            while (i<10){
+<html>
+
+	<head>
+	<script type = "text/javascript">
+     	  while (i<10){
 		console.log("the number is "+ i);
 		i++;
 		}
-        }
-    }
- 
   </script>
   </head>
 <body>
     <div>
         <textarea cols = "100" rows="40">
-         while (i<10){
-    console.log("the number is "+ i);
-    i++;
-  }
+                  while (i<10){
+		console.log("the number is "+ i);
+		i++;
+		}
         </textarea>
     </div>
     <div>
