@@ -1,39 +1,43 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
 <html>
-<head>
-<script type="text/javascript">
-    console.log = function(msg) {
-        var ul = document.getElementById("log");
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(msg));
-        ul.appendChild(li);
-    }
 
-    window.onload = function() {
-        document.getElementById("run").onclick = function() {
-           console.log(true || false); //true
-console.log(true || true); //true
-console.log("string" || true); //string
-console.log(true || ""); //true
-console.log(true || "string"); //true
-console.log(false || ""); //""
-console.log(false || "string"); //"string"
-console.log(5 || 0); //5
-console.log(5 || -6); //5
-console.log(5 || false); //5
-console.log(null || 0); //0
-console.log(null || ""); //""
-console.log(null || false); //false
-console.log("yes" || "no"); //"yes"
-        }
-    }
+	<head>
+	<script type = "text/javascript">
+     console.log(true && false); //false
+console.log(true && true); //true
+console.log("string" && true); //true
+console.log(true && ""); //""
+console.log(true && "string"); //"string"
+console.log(false && ""); //false
+console.log(false && "string"); //false
+console.log(5 && 0); // 0
+console.log(5 && -6); //-6
+console.log(5 && false); //false
+console.log(null && 0); //null
+console.log(null && ""); //null
+console.log(null && false); //null
+conosle.log("yes" && "no"); //"no"
 
-</script>
-</head>
+  </script>
+  </head>
 <body>
     <div>
         <textarea cols = "100" rows="40">
-       
+            console.log(true && false); //false
+console.log(true && true); //true
+console.log("string" && true); //true
+console.log(true && ""); //""
+console.log(true && "string"); //"string"
+console.log(false && ""); //false
+console.log(false && "string"); //false
+console.log(5 && 0); // 0
+console.log(5 && -6); //-6
+console.log(5 && false); //false
+console.log(null && 0); //null
+console.log(null && ""); //null
+console.log(null && false); //null
+conosle.log("yes" && "no"); //"no"
         </textarea>
     </div>
     <div>

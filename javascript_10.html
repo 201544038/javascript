@@ -1,17 +1,10 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-<script type="text/javascript">
-    console.log = function(msg) {
-        var ul = document.getElementById("log");
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(msg));
-        ul.appendChild(li);
-    }
 
-    window.onload = function() {
-        document.getElementById("run").onclick = function() {
-	console.log(!!0);
+<html>
+
+	<head>
+	<script type = "text/javascript">
+     	console.log(!!0);
 	console.log(!!1);
 	console.log(!!'string');
 	console.log(!!'true');
@@ -39,12 +32,12 @@
 	console.log(!!![]);
 	console.log(!!![1,2,3]);
 
-</script>
-</head>
+  </script>
+  </head>
 <body>
     <div>
         <textarea cols = "100" rows="40">
-       	console.log(!!0);
+          	console.log(!!0);
 	console.log(!!1);
 	console.log(!!'string');
 	console.log(!!'true');
